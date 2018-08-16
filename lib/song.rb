@@ -30,10 +30,11 @@ class Song
   def self.genre_count
     genre_count = {}
       
-    @@genres.uniq.each do |kind|
-      genre_count[:kind] = []
-      genre_count[:kind] = 5
-      
+    @@genres.each do |kind|
+      if genre_count[kind]
+        genre_count[kind] << kind
+      else 
+        genre_count 
     end 
   end 
  
