@@ -33,8 +33,9 @@ class Song
     @@genres.each do |kind|
       if genre_count[kind]
         genre_count[kind] << kind
-      else 
-        genre_count 
+      else
+        genre_count[kind] = []
+        genre_count[kind] << kind
     end 
   end 
  
