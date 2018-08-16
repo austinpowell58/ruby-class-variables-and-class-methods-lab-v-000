@@ -40,6 +40,7 @@ class Song
     end 
     genre_count.collect do |keys, values|
       keys, values.size
+      binding.pry
   end 
  
 end
