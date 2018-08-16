@@ -36,6 +36,7 @@ class Song
       else
         genre_count[kind] = []
         genre_count[kind] << kind
+      end 
     end 
   end 
  
