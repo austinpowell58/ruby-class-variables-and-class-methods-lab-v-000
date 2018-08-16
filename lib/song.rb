@@ -38,6 +38,8 @@ class Song
         genre_count[kind] << kind
       end 
     end 
+    genre_count.collect do |keys, values|
+      keys, values.size
   end 
  
 end
